@@ -3,6 +3,7 @@ import Layout from './Layout'
 import HomePage from '../pages/HomePage'
 import GroupsPage from '../pages/GroupsPage'
 import EventsPage from '../pages/EventsPage'
+import VolunteersPage from '../pages/VolunteersPage'
 import DonatePage from '../pages/DonatePage'
 import BlogPage from '../pages/BlogPage'
 import BlogArticlePage from '../pages/BlogArticlePage'
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="groups" element={<GroupsPage />} />
           <Route path="events" element={<EventsPage />} />
+          <Route path="volunteer" element={<VolunteersPage />} />
           <Route path="donate" element={<DonatePage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:slug" element={<BlogArticlePage />} />

@@ -195,7 +195,7 @@ export default function DonatePage() {
           </div>
 
           {/* Tax Info */}
-          <div className="mt-12 rounded-lg bg-primary p-8 ">
+          <div className="mt-12 rounded-lg bg-primary p-8 text-white ">
             <h3 className="font-heading text-xl font-bold">Tax-Deductible Giving</h3>
             <p className="mt-3 ">
               JH Outback is a registered 501(c)(3) nonprofit organization. Your donation is

@@ -5,6 +5,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Groups', href: '/groups' },
   { name: 'Events', href: '/events' },
+  { name: 'Volunteer', href: '/volunteer' },
   { name: 'Donate', href: '/donate' },
   // { name: 'Blog', href: '/blog' }
 ] as const
@@ -35,7 +36,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center">
           <img
-            src="/logo-white.png"
+            src="/jhosd-white-no-tent.png"
             alt="JH Outback San Diego"
             className="h-12 w-auto"
           />
