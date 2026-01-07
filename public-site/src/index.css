@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ===========================================
+  BRAND COLORS REFERENCE
+  ===========================================
+  To change site colors, edit tailwind.config.mjs
+
+  Primary Blue: #182B65
+  Accent Red:   #BC2931
+  Teal:         #6AA0B1
+  Teal Light:   #8bb6c3
+  ===========================================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+}

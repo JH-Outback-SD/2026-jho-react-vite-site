@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="fishGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#334e68"/>
+    </linearGradient>
+  </defs>
+  <!-- Two fish swimming -->
+  <g fill="url(#fishGrad)">
+    <!-- Fish 1 -->
+    <path d="M10 30 Q25 20, 45 30 Q25 40, 10 30 M45 30 L55 25 L55 35 Z" />
+    <circle cx="18" cy="29" r="2" fill="white"/>
+    <!-- Fish 2 -->
+    <path d="M30 50 Q45 40, 65 50 Q45 60, 30 50 M65 50 L75 45 L75 55 Z" />
+    <circle cx="38" cy="49" r="2" fill="white"/>
+  </g>
+  <!-- Text -->
+  <text x="85" y="35" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#1a2a3a">JH OUTBACK</text>
+  <text x="85" y="55" font-family="Arial, sans-serif" font-size="12" fill="#486581">SAN DIEGO</text>
+</svg>
