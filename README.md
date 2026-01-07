@@ -1,2 +1,2 @@
-# Public-Site
-The main website. React Vite
+# JH Outback San Diego
+The main website redesigned in React Vite
