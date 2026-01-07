@@ -409,10 +409,7 @@ export default function VolunteersPage() {
               Have questions about volunteering or want to learn more about our upcoming events?
               We'd love to hear from you.
             </p>
-            <a
-              href="mailto:jhoutbacksd@gmail.com"
-              className="mt-4 inline-flex items-center gap-2 text-accent hover:text-accent/80 hover:underline"
-            >
+            <div className="mt-4 inline-flex items-center gap-2 text-accent">
               <svg className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                   strokeLinecap="round"
@@ -421,8 +418,12 @@ export default function VolunteersPage() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              jhoutbacksd@gmail.com
-            </a>
+              <img
+                src="/images/email-jhoutbacksd-gmail-300x48.png"
+                alt="Contact email"
+                className="h-10 w-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
