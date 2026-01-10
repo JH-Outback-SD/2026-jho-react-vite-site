@@ -285,6 +285,88 @@ export default function VolunteersPage() {
                 </div>
               </div>
             </div>
+
+            {/* Fundraiser */}
+            <div className="overflow-hidden rounded-lg bg-gray-50 shadow-md">
+              <div className="border-l-4 border-amber-500 p-6 md:p-8">
+                <div className="flex items-start gap-4">
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-amber-500/20">
+                    <svg
+                      className="size-6 text-amber-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-primary">Fundraiser</h3>
+                    <p className="mt-2 text-gray-600">
+                      Help support JHO's mission through fundraising initiatives. Whether you have
+                      experience with donor outreach, grant writing, event-based fundraising, or
+                      simply want to help spread the word, your efforts directly impact the youth
+                      and families we serve.
+                    </p>
+                    <ul className="mt-4 space-y-2 text-gray-600">
+                      <li className="flex items-center gap-2">
+                        <svg
+                          className="size-5 text-accent"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Flexible commitment (remote or in-person)
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          className="size-5 text-accent"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Great for those with marketing or networking skills
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          className="size-5 text-accent"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        Directly funds programs for youth and families
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Sign Up CTA */}
@@ -296,7 +378,7 @@ export default function VolunteersPage() {
             </p>
             <div className="mt-8">
               <a
-                href="https://forms.google.com/your-volunteer-form"
+                href="https://forms.gle/Wn9GfHuxidkaECMF7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-accent/90 hover:shadow-xl"
