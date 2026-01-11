@@ -1,0 +1,3 @@
+# Blog content source (markdown files and images)
+# The generated TypeScript files in public-site/src/data/blog are committed
+/blog-content

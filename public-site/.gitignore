@@ -35,3 +35,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Blog content source (markdown files and images)
+# The generated TypeScript files in src/data/blog are committed
+/blog-content

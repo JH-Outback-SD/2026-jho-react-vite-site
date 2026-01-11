@@ -6,8 +6,7 @@ import GroupsPage from '../pages/GroupsPage'
 import EventsPage from '../pages/EventsPage'
 import VolunteersPage from '../pages/VolunteersPage'
 import DonatePage from '../pages/DonatePage'
-import BlogPage from '../pages/BlogPage'
-import BlogArticlePage from '../pages/BlogArticlePage'
+import { BlogPage, BlogArticlePage } from '../pages/blog'
 
 function App() {
   return (
