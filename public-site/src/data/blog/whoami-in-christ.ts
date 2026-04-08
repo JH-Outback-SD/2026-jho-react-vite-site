@@ -8,7 +8,7 @@ export const whoamiInChrist: BlogPost = {
   title: "Whoami in Christ",
   slug: "whoami-in-christ",
   excerpt: "Learn how to share your Christian testimony in 15 minutes or less. This is designed for new or experienced believers to share the life-changing power of your faith.",
-  featuredImage: "/images/blog/whoami-in-christ.png",
+  featuredImage: "https://cdn.jhoutbacksd.com/blog/whoami-in-christ.png",
   category: "Discipleship",
   publishDate: "2026-01-16",
   author: "Jones",

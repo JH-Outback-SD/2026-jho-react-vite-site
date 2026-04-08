@@ -228,7 +228,7 @@ export default function DonatePage() {
                 />
               </svg>
               <img
-                src="/images/email-jhoutbacksd-gmail-300x48.png"
+                src="https://cdn.jhoutbacksd.com/general/email-jhoutbacksd-gmail-300x48.png"
                 alt="Contact email"
                 className="h-10 w-auto"
               />

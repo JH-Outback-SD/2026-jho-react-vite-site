@@ -25,9 +25,7 @@ const __dirname = path.dirname(__filename)
 
 // Paths
 const BLOG_CONTENT_DIR = path.resolve(__dirname, '../../blog-content')
-const BLOG_IMAGES_DIR = path.join(BLOG_CONTENT_DIR, 'images')
 const OUTPUT_DATA_DIR = path.resolve(__dirname, '../src/data/blog')
-const PUBLIC_BLOG_IMAGES_DIR = path.resolve(__dirname, '../public/images/blog')
 
 // ANSI colors for console output
 const colors = {
@@ -203,29 +201,6 @@ function getMarkdownFiles(): string[] {
     .map((file) => path.join(BLOG_CONTENT_DIR, file))
 }
 
-// Copy images
-function copyImages(): void {
-  if (!fs.existsSync(BLOG_IMAGES_DIR)) {
-    log('No images directory found, skipping image copy', 'yellow')
-    return
-  }
-
-  // Create output directory
-  if (!fs.existsSync(PUBLIC_BLOG_IMAGES_DIR)) {
-    fs.mkdirSync(PUBLIC_BLOG_IMAGES_DIR, { recursive: true })
-  }
-
-  const images = fs.readdirSync(BLOG_IMAGES_DIR)
-  for (const image of images) {
-    const src = path.join(BLOG_IMAGES_DIR, image)
-    const dest = path.join(PUBLIC_BLOG_IMAGES_DIR, image)
-
-    if (fs.statSync(src).isFile()) {
-      fs.copyFileSync(src, dest)
-      log(`  Copied: ${image}`, 'cyan')
-    }
-  }
-}
 
 // Process a single markdown file
 function processMarkdownFile(filePath: string): { slug: string; meta: Frontmatter; html: string } {
@@ -236,7 +211,7 @@ function processMarkdownFile(filePath: string): { slug: string; meta: Frontmatte
   // Update image paths
   let processedHtml = html
   if (frontmatter.featuredImage && frontmatter.featuredImage.startsWith('images/')) {
-    frontmatter.featuredImage = `/images/blog/${frontmatter.featuredImage.replace('images/', '')}`
+    frontmatter.featuredImage = `https://cdn.jhoutbacksd.com/blog/${frontmatter.featuredImage.replace('images/', '')}`
   }
 
   return {
@@ -431,9 +406,6 @@ async function build(target: 'all' | string): Promise<void> {
     return processMarkdownFile(file)
   })
 
-  console.log('')
-  log('Copying images...', 'yellow')
-  copyImages()
 
   console.log('')
   log('Generating TypeScript files...', 'yellow')

@@ -8,7 +8,7 @@ export const writtenTestimony: BlogPost = {
   title: "Written Testimony",
   slug: "written-testimony",
   excerpt: "Learn how to share your Christian testimony in 15 minutes or less. This is designed for new or experienced believers to share the life-changing power of your faith.",
-  featuredImage: "/images/blog/20minute-testimony.png",
+  featuredImage: "https://cdn.jhoutbacksd.com/blog/20minute-testimony.png",
   category: "Testimony",
   publishDate: "2024-01-15",
   author: "JH Outback Team",
