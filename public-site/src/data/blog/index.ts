@@ -3,17 +3,30 @@
 
 import type { BlogPostMeta, BlogPost } from '../../types/blog'
 
+import { fiveStepPrayerModel } from './five-step-prayer-model'
 import { whoamiInChrist } from './whoami-in-christ'
 import { writtenTestimony } from './written-testimony'
 
 // All blog posts with full content
 export const blogPosts: Record<string, BlogPost> = {
+  'five-step-prayer-model': fiveStepPrayerModel,
   'whoami-in-christ': whoamiInChrist,
   'written-testimony': writtenTestimony,
 }
 
 // Blog posts metadata only (for listing pages)
 export const blogPostsMeta: BlogPostMeta[] = [
+  {
+    title: "The 5 Step Prayer Model",
+    slug: "five-step-prayer-model",
+    excerpt: "John Wimber's practical, Spirit-led approach to praying for others. A five-step model for healing prayer rooted in listening to the Holy Spirit and the ministry of Jesus.",
+    featuredImage: "https://cdn.jhoutbacksd.com/blog/5-step-prayer-model-john-wimber.png",
+    category: "Prayer",
+    publishDate: "2026-04-07",
+    author: "Vineyard Resources",
+    tags: ["prayer","healing","John Wimber","Vineyard"],
+    subtitle: "A Vineyard Approach to Praying for Others",
+  },
   {
     title: "Whoami in Christ",
     slug: "whoami-in-christ",
